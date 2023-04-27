@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "7de40483-be5b-40c6-89e0-90dd58d46fb9",
+		"name": "LP - WebServices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9081/api/libros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9081/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9081/api/libros",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"World War Z\",\r\n    \"author\": \"Max Brooks\",\r\n    \"description\": \"A novel of zombies.\",\r\n    \"price\": 25.00,\r\n    \"publishedDate\": \"2006-01-28\",\r\n    \"stock\" : 10\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9081/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9081/api/libros/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"World War Z.\",\r\n    \"author\": \"Max Brooks\",\r\n    \"description\": \"A novel of undead people.\",\r\n    \"price\": 25.60,\r\n    \"publishedDate\": \"2006-01-28\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9081/api/libros/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"libros",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9081/api/libros/3",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"stock\" : 15}"
+				},
+				"url": {
+					"raw": "http://localhost:9081/api/libros/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"libros",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9081/api/libros/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9081/api/libros/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9081",
+					"path": [
+						"api",
+						"libros",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
